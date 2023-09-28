@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jQuery -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+
+    <!-- Bootstrap JS (Popper.js is required) -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Digitazmedia</title>
+    <style>
+      .nav-link {
+        color: #4628a4;
+        font-family: Montserrat;
+      }
+
+      .active {
+        color: #4628a4 !important;
+      }
+
+      .main-section {
+        background: rgba(70, 40, 164, 0.2);
+      }
+
+      #hero-heading1 {
+        color: #000;
+        font-family: Poppins;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+
+      #hero-heading2 {
+        /* color: #545454; */
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 204.3%;
+        text-transform: capitalize;
+      }
+    </style>
+    <!-- <script>
+		document.addEventListener('click', function (event) {
+			var navbar = document.getElementById('myNavbar'); // Replace 'myNavbar' with the actual id of your navbar
+			var target = event.target;
+
+			// Check if the clicked element is not a child of the navbar
+			if (!navbar.contains(target) && !target.matches('.navbar-toggler')) {
+				// Close the navbar (assuming it's collapsed)
+				var collapse = new bootstrap.Collapse(navbar.querySelector('.navbar-collapse'));
+			}
+		});
+	</script> -->
+  </head>
+
+  <body class="d-flex flex-column">
+    <div class="newfake d-none" data-useless="container"></div>
+    <!-- ..............................Navbar & First Section............................ -->
+    <section class="section main-section position-relative" id="home">
+      <nav
+        class="navbar navbar-expand-lg navbar-light"
+        id="myNavbar"
+        style="z-index: 5"
+      >
+        <div class="container pt-2 pb-2 pt-md-0 pb-md-0">
+          <a class="navbar-brand" href="#">
+            <img src="Assets/logo.png" class="logo-img" style="width:150px"/>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+          >
+            <span class="navbar-toggler-icon">
+              <!-- <i class="fas fa-bars"></i> -->
+              <!-- Font Awesome hamburger icon -->
+            </span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse"
+            id="navbarNav"
+            data-menu-items="items"
+          >
+            <ul class="navbar-nav ml-auto" style="margin-left: auto">
+              <li class="nav-item mx-md-4 mx-0" data-link="link">
+                <a
+                  class="nav-link montserrat-font active"
+                  href="#home"
+                  style="font-weight: 600"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item mx-md-4 mx-0" data-link="link">
+                <a
+                  class="nav-link montserrat-font"
+                  href="#about"
+                  style="font-weight: 600"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item mx-md-4 mx-0" data-link="link">
+                <a
+                  class="nav-link montserrat-font"
+                  href="#services"
+                  style="font-weight: 600"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item mx-md-4 mx-0" data-link="link">
+                <a
+                  class="nav-link montserrat-font"
+                  href="#contact"
+                  style="font-weight: 600"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <img
+        src="Assets/MainSectionLeftCurve.png"
+        alt="curve"
+        class="first-image"
+      />
+      <section class="background-container">
+        <div class="hero-section container mt-5 pt-5">
+          <div class="row d-flex align-items-center">
+            <div class="col-lg-6 col-md-12">
+              <h1 id="hero-heading1" class="fs-2 fs-md-3 poppins-font">
+                Looking to enhance your
+                <span style="color: #4628a4"
+                  >business's position and performance?</span
+                >
+                Rest assured, you've come to the perfect destination.
+              </h1>
+              <p id="hero-heading2" class="mt-4 mt-md-5 fs-6 montserrat-font">
+                <span style="color: #4628a4">Digitaz Media</span> comprises a
+                proficient team dedicated to enhancing your online presence
+                through ourexceptional Marketing Strategy and design agency. We
+                meticulously optimize websites and craft captivating visuals,
+                ensuring your brand shines, captivates, and draws a larger
+                audience
+              </p>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <img
+                src="Assets/hero-section-img.png"
+                class="img-fluid"
+                alt="Hero Image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <img
+        src="Assets/MainSectionRightCurve.png"
+        alt="curve"
+        class="last-image"
+      />
+    </section>
+
+    <!-- ..............................Second Section............................ -->
+    <section id="about" class="section pt-5 position-relative">
+      <section class="container mt-5">
+        <div
+          class="d-lg-flex justify-content-center align-items-center flex-column-reverse flex-md-row"
+        >
+          <div class="container-md text-center mb-4">
+            <img
+              class="img-fluid"
+              src="Assets/designer-team-working-on-creative-design.png"
+              alt=""
+            />
+          </div>
+          <img
+            src="Assets/RightEllipse.png"
+            alt="ellipse"
+            style="position: absolute; right: 0; height: 400px"
+            id="rightellipse"
+          />
+          <div class="container-md text-center text-md-start">
+            <p class="p1 montserrat-font">About us</p>
+            <h1 class="poppins-font">Unleash Your Digital Potential</h1>
+            <p class="p2 montserrat-font">
+              Welcome to our world of transformative expertise! With 8+ years of
+              innovation and excellence, we specialize in SEO, Social Media,
+              Branding, and UI/UX design, exceeding expectations to elevate your
+              brand.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="p-4 mt-4 mb-5 d-flex d-lg-flex justify-content-between align-items-start flex-column flex-lg-row"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center text-md-start mt-2 ms-lg-5 pb-3"
+          >
+            <div
+              class="ic icon1 d-flex justify-content-center align-items-center"
+              style="margin-left: 5px; margin-right: 5px"
+            >
+              <img class="img-fluid" src="Assets/Group 140.png" alt="" />
+            </div>
+            <div class="ms-sm-2 mt-sm-3 ms-4">
+              <h5 class="montserrat-font fw-bold" style="font-size: 100%">
+                Social Media
+              </h5>
+              <p class="montserrat-font" style="font-size: 84%">
+                Engagements and strategy
+              </p>
+            </div>
+          </div>
+          <div
+            class="d-flex justify-content-between align-items-center text-md-start mt-2 ms-lg-5 pb-3"
+          >
+            <div
+              class="ic icon2 d-flex justify-content-center align-items-center"
+              style="margin-left: 5px; margin-right: 5px"
+            >
+              <img src="Assets/Group.png" alt="" />
+            </div>
+            <div class="ms-sm-2 mt-sm-3 ms-4">
+              <h5 class="montserrat-font fw-bold" style="font-size: 100%">
+                SEO
+              </h5>
+              <p class="montserrat-font" style="font-size: 84%">
+                Elevate Your Online Presence
+              </p>
+            </div>
+          </div>
+          <div
+            class="d-flex justify-content-between align-items-center text-md-start mt-2 ms-lg-5 pb-3"
+          >
+            <div
+              class="ic icon3 d-flex justify-content-center align-items-center"
+              style="margin-left: 5px; margin-right: 5px"
+            >
+              <iconify-icon
+                icon="arcticons:google-ads"
+                style="font-size: 4rem; color: pink"
+              ></iconify-icon>
+            </div>
+            <div class="ms-sm-2 mt-sm-3 ms-4">
+              <h5 class="montserrat-font fw-bold" style="font-size: 100%">
+                Google Ads
+              </h5>
+              <p class="montserrat-font" style="font-size: 84%">
+                Do the right thing
+              </p>
+            </div>
+          </div>
+          <div
+            class="d-flex justify-content-between align-items-center text-md-start mt-2 ms-lg-5 pb-3"
+          >
+            <div
+              class="ic icon4 d-flex justify-content-center align-items-center"
+              style="margin-left: 5px; margin-right: 5px"
+            >
+              <img src="Assets/Group (1).png" alt="" />
+            </div>
+            <div class="ms-sm-2 mt-sm-3 ms-4">
+              <h5 class="montserrat-font fw-bold" style="font-size: 100%">
+                UI/UX Design
+              </h5>
+              <p class="montserrat-font" style="font-size: 84%">
+                Inspiring User Delight
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ..............................OurServices & Testimonial Section............................ -->
+    <section id="services" class="section pt-3 position-relative">
+      <section class="position-relative mt-5 d-flex flex-column align-items-center">
+        <section
+          class="w-100"
+          style="background-color: #dad4ed; padding-bottom: 10rem"
+        >
+          <div class="container">
+            <img
+              src="Assets/LoudSpeaker.png"
+              alt="LoudSpeaker"
+              style="margin-left: 34%"
+            />
+            <div class="row">
+              <div
+                class="col-12 col-md-4 d-flex justify-content-center align-items-center"
+                style="z-index: 4"
+              >
+                <img
+                  style="max-width: 100%"
+                  src="Assets/Businessman.png"
+                  alt="Businessman"
+                  style="z-index: 1"
+                />
+              </div>
+              <div class="col-12 col-md-8 mt-3">
+                <h2 class="poppins-font fw-bold">
+                  Our <span style="color: #4628a4">Services</span>
+                </h2>
+                <p
+                  style="color: #545454; line-height: 40px; margin-top: 20px"
+                  class="montserrat-font"
+                >
+                  <span style="color: #4628a4">Digitaz Media</span> is a team to
+                  Attain digital triumph through our all-inclusive offerings.Our
+                  SEO specialists enhance rankings, driving organic traffic and
+                  visibility. Engage your audience with social media strategies,
+                  promoting growth and brand recognition. Plus, our UI/UX
+                  designs guarantee seamless, user-centric experiences,
+                  fostering customer loyalty for digital success.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="container w-100 shadow"
+          style="
+            border: 0.1px solid #d2d2d2;
+            border-radius: 10px;
+            background-color: white;
+            position: absolute;
+            top: 27.5%;
+            z-index: 1;
+          "
+        >
+          <img
+            src="Assets/PurplePot.png"
+            alt="pot"
+            style="position: absolute; right: 0; bottom: 84%"
+          />
+          <div class="row p-4">
+            <div
+              class="our-services our-services1 col-12 col-md-6 d-flex pt-4 pb-3 pe-5"
+            >
+              <div
+                class="ic icon2 d-flex justify-content-center align-items-center"
+                style="margin-right: 5px; padding: 30px"
+              >
+                <img src="Assets/Group.png" alt="" />
+              </div>
+              <div class="ms-3 mt-lg-2">
+                <h5 class="poppins-font">SEO</h5>
+                <p class="poppins-font">
+                  The simplest but robust technology to accompany with you
+                </p>
+              </div>
+            </div>
+            <div
+              class="our-services our-services1 col-12 col-md-6 d-flex pb-3 pe-5 pt-4 ps-lg-5"
+            >
+              <div
+                class="ic icon1 d-flex justify-content-center align-items-center"
+                style="margin-right: 5px; padding: 30px"
+              >
+                <img src="Assets/Group 140.png" alt="" />
+              </div>
+              <div class="ms-3 mt-lg-2">
+                <h5 class="poppins-font">Social Media</h5>
+                <p class="poppins-font">
+                  Platform independant business solutions for maximum
+                  availability
+                </p>
+              </div>
+            </div>
+            <div
+              class="our-services our-services3 col-12 col-md-6 d-flex pt-4 pb-3 pe-5"
+            >
+              <div
+                class="ic icon3 d-flex justify-content-center align-items-center"
+                style="margin-right: 5px"
+              >
+                <iconify-icon
+                  icon="arcticons:google-ads"
+                  style="font-size: 3.5rem; color: pink"
+                ></iconify-icon>
+              </div>
+              <div class="ms-3 mt-lg-2">
+                <h5 class="poppins-font">Google Ads</h5>
+                <p class="poppins-font">
+                  Let the world find you on top of others
+                </p>
+              </div>
+            </div>
+            <div
+              class="our-services our-services4 col-12 col-md-6 d-flex pt-4 ps-lg-5"
+            >
+              <div
+                class="ic icon4 d-flex justify-content-center align-items-center"
+                style="margin-right: 5px"
+              >
+                <img src="Assets/Group (1).png" alt="" />
+              </div>
+              <div class="ms-3 mt-lg-2">
+                <h5 class="poppins-font">UI/UX Design</h5>
+                <p class="poppins-font">
+                  Advanced autonomous technologies to make life simple
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="container w-100 d-flex flex-column gap-5 sectionthird"
+          style="margin-top: 16%"
+        >
+          <div class="row d-flex justify-content-between">
+            <div class="col-12 col-md-3">
+              <img src="Assets/LeftBell.png" alt="Bell" class="w-75" />
+            </div>
+            <div class="col-12 col-md-6 d-flex flex-column gap-3 mt-4">
+              <h5
+                class="text-center poppins-font"
+                style="font-weight: 400; font-size: 24px"
+              >
+                TESTIMONIALS
+              </h5>
+              <h2
+                class="text-center poppins-font"
+                style="font-weight: 700; font-size: 40px"
+              >
+                Read What Others
+                <span style="color: #4628a4">Had Said</span>
+              </h2>
+            </div>
+            <div class="col-12 col-md-3">
+              <img
+                src="Assets/RightBell.png"
+                alt="Bell"
+                class="w-75"
+                style="float: right"
+              />
+            </div>
+          </div>
+          <div class="row gap-4 gap-md-0">
+            <div class="col-12 col-md-4">
+              <div
+                class="d-flex flex-column align-items-center gap-3 p-4"
+                style="
+                  height: auto;
+                  background-color: #dedcdb80;
+                  border-radius: 20px;
+                "
+              >
+                <img src="Assets/WesternMan1.png" alt="man1" />
+                <span
+                  style="color: #252525; font-weight: 600; font-size: 26px"
+                  class="montserrat-font"
+                  >Rahul Mehta</span
+                >
+                <p class="text-center montserrat-font" style="color: #545454">
+                  Digitazmedia SEO service delivered outstanding results,
+                  significantly increasing our website traffic and search
+                  rankings. Highly satisfied
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div
+                class="d-flex flex-column align-items-center gap-3 p-4"
+                style="
+                  height: 100%;
+                  background-color: #dedcdb80;
+                  border-radius: 20px;
+                "
+              >
+                <img src="Assets/WesternMan2.png" alt="man1" />
+                <span
+                  style="color: #252525; font-weight: 600; font-size: 26px"
+                  class="montserrat-font"
+                  >Sashi Verma</span
+                >
+                <p class="text-center montserrat-font" style="color: #545454">
+                  Exceptional UI/UX design transformed our user experience.
+                  Smooth, intuitive, and beautiful. Our customers love it
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div
+                class="d-flex flex-column align-items-center gap-3 p-4"
+                style="
+                  height: 100%;
+                  background-color: #dedcdb80;
+                  border-radius: 20px;
+                "
+              >
+                <img src="Assets/WesternMan3.png" alt="man1" />
+                <span
+                  style="color: #252525; font-weight: 600; font-size: 26px"
+                  class="montserrat-font"
+                  >Neha Thakur</span
+                >
+                <p class="text-center montserrat-font" style="color: #545454">
+                  Our web app's design by Digitaz is a game-changer. Efficient,
+                  user-friendly, and visually stunning. We're thrilled
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <!-- ...............................Last Section.............................. -->
+    <section
+      id="contact"
+      class="section contact"
+      style="padding-top: 5rem; background-color: #f6f6f6"
+    >
+      <section class="container mt-5 position-relative">
+        <img
+          src="Assets/DoubleCImg.png"
+          style="position: absolute; top: -60px; right: 0"
+        />
+        <div class="row gx-5 d-flex align-items-end">
+          <div class="col-md-6 col-12">
+            <img
+              class="img-fluid"
+              src="Assets/customer-support.png"
+              alt="Customer"
+            />
+          </div>
+
+          <div
+            class="col-12 col-md-6 gy-5 mb-5 d-flex flex-column align-items-center align-items-md-start"
+          >
+            <h2
+              class="row mx-3 w-100 fw-bold fs-1 poppins-font text-center text-md-start"
+            >
+              Be a part of the next big thing
+            </h2>
+            <div class="row m-3 mt2 montserrat-font text-center text-md-start">
+              Embrace the opportunity to pioneer innovation and be at the
+              forefront of the next major breakthrough in our industry
+            </div>
+            <!-- <div class="row btn btn-primary mt-3 m-3 poppins-font">Contact us</div> -->
+            <button
+              class="d-flex justify-content-center mt-3 m-3 poppins-font w-50"
+              style="
+                background-color: #8772d4;
+                border: none;
+                border-bottom: 3px solid #4628a44d;
+                border-radius: 10px;
+                padding: 10px 10px;
+                color: white;
+                cursor: pointer;
+              "
+              data-id="primary"
+            >
+              Contact us
+            </button>
+            <!-- Modal -->
+          </div>
+        </div>
+
+        <div class="container">
+          <div
+            class="row d-lg-flex justify-content-md-between justify-content-center gy-4"
+          >
+            <div class="col-12 col-md-6 col-sm-12">
+              <div class="logo mt-5 pt-2 d-none d-md-block">
+                <img src="Assets/Beverly 1.png" alt="" />
+              </div>
+              <div class="d-flex flex-column gap-2 gap-md-4 mt-sm-4">
+                <h2 class="fw-bold fs-2 text-center text-md-start poppins-font">
+                  Let’s Collaborate
+                </h2>
+                <div class="text-center text-md-start montserrat-font">
+                  Let's team up for shared success and meaningful collaborations
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-sm-12">
+              <img class="w-100" src="Assets/Group 66.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="d-flex flex-wrap flex-column flex-sm-row d-lg-flex mt-5 mb-4 mt-md-1 align-items-center justify-content-between text-center"
+        >
+          <div
+            class="follow mt-3 d-flex flex-column align-items-center gap-3"
+            style="margin-bottom: 0.25em"
+          >
+            <div class="m-3 mb-0 montserrat-font text-start-follow">
+              Follow us
+            </div>
+            <div class="icons d-flex align-items-center gap-2">
+              <div
+                class="d-flex justify-content-center align-items-center iconshadow"
+                style="
+                  background-color: white;
+                  border-radius: 50%;
+                  width: 45px;
+                  height: 45px;
+                "
+              >
+                <a
+                  href="http://instagram.com/digitazmedia_official/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target="_blank"
+                >
+                  <iconify-icon icon="ph:instagram-logo-light" style="font-size: 160%; margin-top: 2px;" ></iconify-icon>
+                </a>
+              </div>
+              <div
+                class="d-flex justify-content-center align-items-center iconshadow"
+                style="
+                  background-color: white;
+                  border-radius: 50%;
+                  width: 45px;
+                  height: 45px;
+                "
+              >
+                <a
+                  href="https://www.facebook.com/digitazmediaofficial?mibextid=9R9pXO" target="_blank"
+                >
+                  <iconify-icon
+                    icon="ri:facebook-fill"
+                    style="font-size: 160%; margin-top: 2px;"
+                  ></iconify-icon>
+                </a>
+              </div>
+              <div
+                class="d-flex justify-content-center align-items-center iconshadow"
+                style="
+                  background-color: white;
+                  border-radius: 50%;
+                  width: 45px;
+                  height: 45px;
+                "
+              >
+                <a href="mailto:digitazmedia@gmail.com" target="_blank">
+                  <iconify-icon
+                    icon="ei:envelope"
+                    style="font-size: 180%; margin-top: 2px;"
+                  ></iconify-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="d-lg-flex d-none"
+            style="height: 100px; border: 1px solid #c2c2c2"
+          ></div>
+
+          <div class="ph mt-3 d-flex align-items-center gap-3">
+            <img src="Assets/phone 1.png" alt="phone" style="width: 14%" />
+            <span class="montserrat-font">+91 9092029300</span>
+          </div>
+
+          <div
+            class="d-lg-flex d-none"
+            style="height: 100px; border: 1px solid #c2c2c2"
+          ></div>
+
+          <div class="location mt-3 d-flex align-items-center gap-3">
+            <iconify-icon
+              icon="ion:location-sharp"
+              style="font-size: 180%"
+            ></iconify-icon>
+            <span class="montserrat-font">Bangalore, Karnataka, India</span>
+          </div>
+        </div>
+      </section>
+    </section>
+    <div class="modaltwo" data-modal="primary">
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg flex justify-content-center"
+      >
+        <div class="modal-content" style="width: 400px">
+          <div class="modal-header">
+            <a
+              href="#"
+              class="w-100 mb-2 me-2 link-danger"
+              data-dismiss="modal"
+              data-id="cross"
+            >
+              <iconify-icon
+                class="float-end"
+                icon="zondicons:close"
+              ></iconify-icon>
+            </a>
+          </div>
+          <div class="modal-body">
+            <form
+              class="form w-100 d-flex justify-content-center align-items-center flex-column"
+              data-form="primary"
+            >
+              <div class="form-group name-group mb-3 w-100">
+                <div class="palceholder">
+                  <label for="inputName">Name </label>
+                  <span class="star" style="color: red">*</span>
+                </div>
+                <input
+                  type="text"
+                  class="form-control required"
+                  id="inputName"
+                  required
+                  pattern="[A-Za-z\s]+"
+                  title="
+                          Please enter alphabets only.
+						            "
+                />
+                <div class="invalid-feedback">Please enter a value .</div>
+              </div>
+              <div class="form-group InputNumber-group mb-3 w-100">
+                <div class="palceholder">
+                  <label for="InputNumber">Contact Number </label>
+                  <span class="star" style="color: red">*</span>
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="InputNumber"
+                  required
+                  pattern="^[0-9]{10}$"
+                  title="
+                          Please enter a valid 10-digit phone number.
+						            "
+                />
+                <div class="invalid-feedback"></div>
+              </div>
+              <div class="form-group email-group mb-3 w-100">
+                <div class="palceholder">
+                  <label for="email">Email </label>
+                  <span class="star" style="color: red">*</span>
+                </div>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <div class="mb-3 w-100">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="InputLocation"
+                  placeholder="Help us with your location "
+                />
+              </div>
+              <div
+                class="mb-3 w-100 d-flex justify-content-center align-items-center"
+              >
+                <button
+                  class="d-flex justify-content-center mt-3 m-3 poppins-font w-50"
+                  style="
+                    background-color: #8772d4;
+                    border: none;
+                    border-bottom: 3px solid #4628a44d;
+                    border-radius: 10px;
+                    padding: 10px 10px;
+                    color: white;
+                    cursor: pointer;
+                  "
+                  data-id="primary"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modaltwo" id="successModal" data-modal="secondary">
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg flex justify-content-center"
+      >
+        <div class="modal-content" style="width: 400px">
+          <div class="modal-body">
+            <div class="text-center">
+              <p>
+                Thank you for providing your details. Our team will contact you
+                shortly.
+              </p>
+            </div>
+            <div
+              class="mb-3 w-100 d-flex justify-content-center align-items-center"
+            >
+              <button
+                class="d-flex justify-content-center mt-3 m-3 poppins-font w-50"
+                style="
+                  background-color: #8772d4;
+                  border: none;
+                  border-bottom: 3px solid #4628a44d;
+                  border-radius: 10px;
+                  padding: 10px 10px;
+                  color: white;
+                  cursor: pointer;
+                "
+                data-id="cross"
+              >
+                Lets go
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- javasscript for active -->
+
+    <script>
+      const menuBtn = document.querySelector('[data-bs-toggle="collapse"]');
+      const menu = document.querySelector('[data-menu-items="items"]');
+      const menuLink = document.querySelectorAll('[data-link="link"]');
+      const btnID = document.querySelector('[data-id="primary"]');
+      var form = document.querySelector('[data-form="primary"]');
+      const formPrimary = document.querySelector('[data-modal="primary"]');
+      const formSecondary = document.querySelector('[data-modal="secondary"]');
+      const closeOut = document.querySelectorAll('[data-id="cross"]');
+      const fakeContainer = document.querySelector(
+        '[data-useless="container"]'
+      );
+      const bodyContainer = document.querySelector("body");
+
+      console.log("menuLink.target", menuLink.target);
+      menuBtn.addEventListener("click", () => {
+        if (menu.style.display === "none" || menu.style.display === "") {
+          menu.style.display = "block";
+        } else {
+          menu.style.display = "none";
+        }
+      });
+
+      closeOut.forEach((x) => {
+        x.addEventListener("click", (e) => {
+          e.preventDefault();
+
+          formPrimary.classList.remove("new");
+          console.log(
+            "🚀 ~ file: index.html:866 ~ closeOut.addEventListener ~ formPrimary:",
+            formPrimary
+          );
+          bodyContainer.classList.remove("removescroll");
+          fakeContainer.classList.add("d-none");
+          formSecondary.classList.remove("new");
+        });
+      });
+
+      btnID.addEventListener("click", () => {
+        console.log("🚀 ~ file: index.html:846 ~ form:", form);
+        formPrimary.classList.add("new");
+        fakeContainer.classList.remove("d-none");
+        bodyContainer.classList.add("removescroll");
+
+        form.addEventListener("submit", function (event) {
+          event.preventDefault();
+          console.log("🚀 ~ file: index.html:863 ~ formPrimary:", formPrimary);
+          formPrimary.classList.remove("new");
+          // // bodyContainer.classList.remove("removescroll");
+          // // fakeContainer.classList.add("d-none");
+          formSecondary.classList.add("new");
+        });
+      });
+
+      menuLink.forEach((link) => {
+        link.addEventListener("click", () => {
+          if (menu.style.display === "none" || menu.style.display === "") {
+            menu.style.display = "block";
+          } else {
+            menu.style.display = "none";
+          }
+        });
+      });
+
+      const navLinkElm = document.querySelectorAll(".nav-link");
+      const sectionElm = document.querySelectorAll(".section");
+
+      let currentSection = "home";
+      window.addEventListener("scroll", () => {
+        sectionElm.forEach((sectionEl) => {
+          if (window.scrollY >= sectionEl.offsetTop - 250) {
+            currentSection = sectionEl.id;
+          }
+        });
+
+        navLinkElm.forEach((navLinkEl) => {
+          if (navLinkEl.href.includes(currentSection)) {
+            document.querySelector(".active").classList.remove("active");
+            navLinkEl.classList.add("active");
+          }
+        });
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        let placeholders = document.querySelectorAll(".palceholder");
+        placeholders.forEach(function (placeholder) {
+          placeholder.addEventListener("click", function () {
+            let siblingInput = this.nextElementSibling;
+            if (siblingInput && siblingInput.tagName === "INPUT") {
+              siblingInput.focus();
+            }
+          });
+        });
+
+        // 2. Focusing on an element with class "form-control" hides the adjacent ".placeholder" element.
+        let formControls = document.querySelectorAll(".form-control");
+        formControls.forEach(function (formControl) {
+          formControl.addEventListener("focus", function () {
+            let siblingPlaceholder = this.previousElementSibling;
+            if (
+              siblingPlaceholder &&
+              siblingPlaceholder.classList.contains("palceholder")
+            ) {
+              siblingPlaceholder.style.display = "none";
+            }
+          });
+
+          // 3. Blurring from an element with class "form-control" shows the adjacent ".placeholder" element if the input is empty.
+          formControl.addEventListener("blur", function () {
+            if (this.value.length === 0) {
+              let siblingPlaceholder = this.previousElementSibling;
+              if (
+                siblingPlaceholder &&
+                siblingPlaceholder.classList.contains("palceholder")
+              ) {
+                siblingPlaceholder.style.display = "block";
+              }
+            }
+          });
+
+          // 4. Trigger a blur event on all ".form-control" elements on page load.
+          formControl.dispatchEvent(new Event("blur"));
+        });
+      });
+    </script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap JS (Popper.js is required) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
