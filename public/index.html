@@ -19,7 +19,13 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -732,6 +738,7 @@
             <form
               class="form w-100 d-flex justify-content-center align-items-center flex-column"
               data-form="primary"
+              id="contactForm"
             >
               <div class="form-group name-group mb-3 w-100">
                 <div class="palceholder">
@@ -744,9 +751,7 @@
                   id="inputName"
                   required
                   pattern="[A-Za-z\s]+"
-                  title="
-                          Please enter alphabets only.
-						            "
+                  title="Please enter alphabets only."
                 />
                 <div class="invalid-feedback">Please enter a value .</div>
               </div>
@@ -975,5 +980,6 @@
     <!-- Bootstrap JS (Popper.js is required) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./client.js"></script>
   </body>
 </html>

@@ -12,12 +12,12 @@ app.post('/sendEmail', (req, res) => {
   const { name, contact, email, message } = req.body;
 
   // Create an email transport using Nodemailer and your email provider's settings
- 
+  console.log(name,contact,email,message);
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'hhimanshu030@gmail.com',
-      pass: 'tklx qsve vvgr eqdv',
+      user: 'email.digitazmedia@gmail.com',
+      pass: 'ucxj ccww zjor zumi',
     },
   });
 
@@ -32,7 +32,7 @@ app.post('/sendEmail', (req, res) => {
 
   // Define the email content and template
   const mailOptions = {
-    from: 'crazyphoton150.hs@example.com',
+    from: 'Digitaz Media <email.digitazmedia@gmail.com>',
     to: email,
     subject: 'Subject of Your Email',
     html: '<p>Your HTML template here</p>',

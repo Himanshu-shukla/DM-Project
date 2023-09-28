@@ -5,7 +5,6 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
     const contact = document.getElementById('InputNumber').value;
     const email = document.getElementById('email').value;
     const message = document.getElementById('InputLocation').value;
-  
     fetch('/sendEmail', {
       method: 'POST',
       headers: {
