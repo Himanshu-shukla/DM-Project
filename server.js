@@ -33,9 +33,9 @@ app.post('/sendEmail', (req, res) => {
   // Define the email content and template
   const mailOptions = {
     from: 'Digitaz Media <email.digitazmedia@gmail.com>',
-    to: email,
+    to: "email.digitazmedia@gmail.com",
     subject: 'Subject of Your Email',
-    html: '<p>Your HTML template here</p>',
+    text: `Name: ${name}\nEmail: ${email}\nContact: ${contact}\nMessage: ${message}`,
   };
 
   // Send the email
