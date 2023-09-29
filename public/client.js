@@ -14,7 +14,7 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
     })
       .then((response) => {
         if (response.ok) {
-          alert('Email sent successfully');
+          alert('Thank you for contacting us! We are here to assist you. Please give us a moment, and we will get back to you shortly.');
           // Clear the form or perform any other actions here
         } else {
           alert('Error sending email');
