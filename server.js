@@ -26,6 +26,7 @@ app.post('/sendEmail', (req, res) => {
 
   // Format the time as "Hr/Min"
   const formattedTime = new Intl.DateTimeFormat('en-GB', {
+    timeZone: 'Asia/Kolkata',
     hour: 'numeric',
     minute: 'numeric'
   }).format(currentDate);
