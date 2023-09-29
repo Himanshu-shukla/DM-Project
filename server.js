@@ -34,8 +34,8 @@ app.post('/sendEmail', (req, res) => {
   const mailOptions = {
     from: 'Digitaz Media <email.digitazmedia@gmail.com>',
     to: "email.digitazmedia@gmail.com",
-    subject: 'Subject of Your Email',
-    text: `Name: ${name}\nEmail: ${email}\nContact: ${contact}\nMessage: ${message}`,
+    subject: 'Enquiry Details',
+    text: `Name: ${name}\nEmail: ${email}\nContact: ${contact}\nLocation: ${message}`,
   };
 
   // Send the email
